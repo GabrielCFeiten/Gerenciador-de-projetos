@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "tb_projeto")
-public class Projeto {
+public class ProjetoModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +20,7 @@ public class Projeto {
     @Column(name = "data_fim")
     private LocalDate dataFim;
 
-    public Projeto() {
+    public ProjetoModel() {
     }
 
     public Long getId() {
